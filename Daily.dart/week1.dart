@@ -33,6 +33,17 @@ String longestword(String sentence){
   return Longest;
 }
 
+//vowels
+int vowelswords(String words){
+  int count =0;    
+
+for(int i=0;i<words.length;i++){
+    if("aeiou".contains(words[i].toLowerCase())){
+        count++;
+    }
+}
+return count;
+}
 void main(){
-  print(longestword("flutter makes app developments easyy"));
+  print(vowelswords("Flutter developed"));
 }
