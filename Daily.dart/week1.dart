@@ -43,7 +43,33 @@ for(int i=0;i<words.length;i++){
     }
 }
 return count;
+} 
+
+// mqjority
+
+int?findMajorityElement(List<int>numb){
+  int limit=numb.length ~/2;
+
+  for(int i=0;i<numb.length;i++){
+    int count=0;
+    for(int j=0;j<numb.length;j++){
+      if(numb[i]==numb[j]){
+        count++;
+      }
+    }
+    if(count>limit){
+      return numb[i];
+    }
+  }
+  return null;
 }
+
+
+
+
+
+
+
 void main(){
-  print(vowelswords("Flutter developed"));
+  print(findMajorityElement([2,2,2,3,3,3,3,3,]));
 }
