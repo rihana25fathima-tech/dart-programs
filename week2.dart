@@ -34,8 +34,19 @@ int mostFrequent(List<int>list){
   }
   return result;
 }
-void main(){
-  List<int>numbers= [4,2,5,6,4,3,4,4,3,4];
 
- print(mostFrequent(numbers));
+
+
+String username(String name) {
+  name = name.replaceAll(" ", "").toLowerCase();
+
+  return "$name${name.length}";
 }
+
+void main() {
+  String name = "Riha fathima";
+
+  print(username(name));
+}
+
+
