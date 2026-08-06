@@ -42,6 +42,21 @@ String username(String name) {
 
   return "$name${name.length}";
 }
+//next
+
+List<int>? findPair (List<int>numb,int target){
+  for(int i=0;i<numb.length;i++){
+    for(int j=i+1;j<numb.length;j++){
+      if(numb[i]+numb[j]== target){
+        return [numb[i],numb[j]];
+      }
+    }
+  }
+  return null;
+}
+
+
+
 
 void main() {
   String name = "Riha fathima";
